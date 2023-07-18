@@ -19,58 +19,164 @@
     text-align: center;
     text-decoration: none;
     display: block;
+    width: 100%;
   }
 
   a:hover {
     background-color: orange;
     color: black;
   }
+
+  h1 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(38, 0, 255);
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  h1:hover {
+    background-color: rgb(4, 0, 255);
+    color: white;
+  }
+
 </style>
 
 <body>
-  <h1>Product Shelf deeplink</h1>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use">deposit.for_use</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_save">deposit.for_save</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card">credit_card</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=investment&sub_category=investment">investment</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal">loan.personal</a>
-  <a href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.car">loan.car</a>
-  <a href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.home">loan.home</a>
-  <a href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.sme">loan.sme</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.life_and_health">insurance.life_and_health</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.travel">insurance.travel</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.accident">insurance.accident</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.car">insurance.car</a>
+  <h1 id="dev-button" onclick="onDevClick()">DEV</h1>
+  <div id="dev-container" style="display: none;">
+    <h2>Product Shelf deeplink</h2>
+      <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use">deposit.for_use</a>    
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_save">deposit.for_save</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card">credit_card</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=investment&sub_category=investment">investment</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal">loan.personal</a>
+    <a href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.car">loan.car</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.home">loan.home</a>
+    <a href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.sme">loan.sme</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.life_and_health">insurance.life_and_health</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.travel">insurance.travel</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.accident">insurance.accident</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.car">insurance.car</a>
 
-  <h1>Product Detail deeplink</h1>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use&sg_product_id=S41002">Premium
-    debit card</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card&sg_product_id=S20008">Bundle
-    Credit Card</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11005">Bundle
-    Personal Loan</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11002">FLASH
-    / Nano Card</a>
-  <a
-    href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11003">Global
-    House Cash Card</a>
-  <h1>Setting deeplink</h1>
-  <a
-  href="oneappvit://linkaccess/setting?call_from=personalize&module=setting&menu=security_checkup">Security Checkup</a>
+    <h2>Product Detail deeplink</h2>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use&sg_product_id=S41002">Premium
+      debit card</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card&sg_product_id=S20008">Bundle
+      Credit Card</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11005">Bundle
+      Personal Loan</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11002">FLASH
+      / Nano Card</a>
+    <a
+      href="oneappvit://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11003">Global
+      House Cash Card</a>
+    <h2>Setting deeplink</h2>
+    <a href="oneappvit://linkaccess/setting?call_from=personalize&module=setting&menu=security_checkup">Security
+      Checkup</a>
+  </div>
 
+  <h1 id="uat-button" onclick="onUatClick()">UAT</h1>
+  <div id="uat-container" style="display: none;">
+    <h2>Product Shelf deeplink</h2>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use">deposit.for_use</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_save">deposit.for_save</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card">credit_card</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=investment&sub_category=investment">investment</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal">loan.personal</a>
+    <a href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.car">loan.car</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.home">loan.home</a>
+    <a href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.sme">loan.sme</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.life_and_health">insurance.life_and_health</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.travel">insurance.travel</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.accident">insurance.accident</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=insurance&sub_category=insurance.car">insurance.car</a>
+
+    <h2>Product Detail deeplink</h2>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=deposit&sub_category=deposit.for_use&sg_product_id=S41002">Premium
+      debit card</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=credit_card&sub_category=credit_card&sg_product_id=S20008">Bundle
+      Credit Card</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11005">Bundle
+      Personal Loan</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11002">FLASH
+      / Nano Card</a>
+    <a
+      href="oneappuat://linkaccess/salegallery?call_from=personalize&category=loan&sub_category=loan.personal&sg_product_id=S11003">Global
+      House Cash Card</a>
+    <h2>Setting deeplink</h2>
+    <a href="oneappuat://linkaccess/setting?call_from=personalize&module=setting&menu=security_checkup">Security
+      Checkup</a>
+  </div>
+
+  <script>
+    var isDevVisible = false
+    var isUatVisible = false
+
+    let devCon = document.getElementById("dev-container")
+    let uatCon = document.getElementById("uat-container")
+
+    let devButton = document.getElementById("dev-button")
+    let uatButton = document.getElementById("uat-button")
+
+    function onDevClick() {
+      isDevVisible = !isDevVisible
+      if (isDevVisible) {
+        devCon.style.display = "block"
+        devButton.style.background = "blue"
+        devButton.style.color = "white"
+      } else {
+        devCon.style.display = "none"
+        devButton.style.background = "white"
+        devButton.style.color = "black"
+      }
+    }
+
+    function onUatClick() {
+      isUatVisible = !isUatVisible
+      if (isUatVisible) {
+        uatCon.style.display = "block"
+        uatButton.style.background = "blue"
+        uatButton.style.color = "white"
+      } else {
+        uatCon.style.display = "none"
+        uatButton.style.background = "white"
+        uatButton.style.color = "black"
+      }
+    }
+  </script>
 </body>
 
 </html>
