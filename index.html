@@ -414,9 +414,10 @@
 
     deeplinkForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      let url = document.getElementById("deeplinkUrl");
-      if (url != null) {
-        window.open(url)
+      let url = document.getElementById("deeplinkUrl").value.replace(" ","");
+
+      if (url != null || url != "") {
+        window.window.location.assign(url)
       }
     })
   }
